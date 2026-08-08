@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page-bg: #0a0a0a;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+/* Utility to help svh support */
+.supports-svh-min-h {
+  min-height: 100svh;
+}
+
+/* Reveal utility (we add inline transition-delay via style) */
+.reveal-hidden {
+  transform: translateY(8px);
+  opacity: 0;
+}
+.reveal-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Smooth transitions for poster/video/canvas crossfade */
+.media-layer {
+  transition: opacity 500ms ease;
+}
