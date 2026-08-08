@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Lasting Relationships</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://db.onlinewebfonts.com/c/9d4d074c9335825a23cce178ee03b498?family=P22+Mackinac+W01+Book" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+          serif: ["'P22 Mackinac W01 Book'", 'Georgia', 'serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body { font-family: 'Inter', sans-serif; background: #FFFFFF; }
+</style>
+</head>
+
+<body class="min-h-screen bg-white overflow-x-hidden text-[#191919]">
+
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 right-0 z-50 px-6 sm:px-10 md:px-14 py-4 sm:py-5">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2.5">
+      <svg viewBox="0 0 256 256" fill="currentColor" class="w-6 h-6 text-[#191919]">
+        <path d="M 144 256 L 27.598 256 L 144 139.598 Z" />
+        <path d="M 256 207.5 L 200 256 L 200 56 L 0 56 L 48 0 L 256 0 Z" />
+        <path d="M 0 204.402 L 0 112 L 92.402 112 Z" />
+      </svg>
+      <span class="font-semibold text-base tracking-tight text-[#191919]">Boomerang</span>
+    </div>
+
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#product" class="text-sm text-[#191919]/70 hover:text-[#191919] transition-colors duration-200">Product</a>
+      <a href="#solutions" class="text-sm text-[#191919]/70 hover:text-[#191919] transition-colors duration-200">Solutions</a>
+      <a href="#pricing" class="text-sm text-[#191919]/70 hover:text-[#191919] transition-colors duration-200">Pricing</a>
+      <a href="#company" class="text-sm text-[#191919]/70 hover:text-[#191919] transition-colors duration-200">Company</a>
+    </div>
+
+    <button class="px-5 py-2.5 bg-[#191919] text-white text-sm font-medium rounded-lg hover:bg-[#191919]/90 transition-colors duration-200">
+      Book A Demo
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative flex flex-col items-center overflow-hidden h-screen">
+
+  <!-- Boomerang video background -->
+  <div class="absolute inset-0 z-0 scale-[1.15] origin-top overflow-hidden">
+    <video
+      id="bg-video"
+      src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260715_090628_7052d8a6-a094-4341-a4a2-ad58493a67a9.mp4"
+      muted
+      playsinline
+      autoplay
+      preload="auto"
+      crossorigin="anonymous"
+      class="w-full h-full object-cover object-top"
+    ></video>
+    <canvas id="bg-canvas" class="w-full h-full object-cover object-top" style="display:none"></canvas>
+  </div>
+
+  <div class="relative z-10 flex flex-col items-center flex-1 w-full">
+
+    <div class="flex flex-col items-center text-center pt-24 sm:pt-26 md:pt-32 px-4 sm:px-6">
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-[1.1] tracking-tighter text-[#191919] font-normal">
+        Build lasting<br>relationships.
+      </h1>
+
+      <p class="max-w-sm sm:max-w-md mt-5 sm:mt-6 md:mt-8 text-sm md:text-base text-[#191919]/70 leading-relaxed">
+        Conversational AI platform for modern financial institutions — agents that handle the full borrower lifecycle across email, SMS, and voice.
+      </p>
+
+      <button class="mt-6 sm:mt-8 md:mt-10 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#191919] text-white text-sm font-medium rounded-lg hover:bg-[#191919]/90 transition-colors duration-200">
+        Book A Demo
+      </button>
+    </div>
+
+    <!-- Bottom info panel -->
+    <div class="mt-auto w-full max-w-5xl px-4 sm:px-6">
+      <div class="bg-white/90 backdrop-blur-sm border border-gray-200 border-b-0 pt-8 sm:pt-12 md:pt-16 px-5 sm:px-8 md:px-12 pb-0 shadow-sm">
+
+        <div class="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-16">
+          <div>
+            <span class="text-[11px] uppercase tracking-[0.2em] text-[#191919]/50 font-medium">What do we do?</span>
+            <h2 class="mt-3 text-2xl sm:text-3xl md:text-4xl font-serif font-normal leading-tight tracking-tight text-[#191919]">
+              Conversations that<span class="hidden sm:inline"><br></span> build momentum
+            </h2>
+          </div>
+          <div class="flex items-end">
+            <p class="text-sm md:text-[15px] text-[#191919]/70 leading-relaxed">
+              Conversational AI built for regulated financial institutions. Agents that hold a real conversation, plug into the systems you run, and show their work.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-6 sm:mt-8 md:mt-10 h-px bg-gray-200 w-full"></div>
+
+        <div class="grid sm:grid-cols-3 gap-2 sm:gap-3 py-3 sm:py-4">
+
+          <div class="group bg-[#F4F3F3] hover:bg-[#eaeaea] transition-all duration-200 cursor-pointer px-4 sm:px-6 py-3.5 sm:py-4 flex items-center justify-between">
+            <span class="font-medium text-[#191919]">
+              <span class="text-[#191919]/40">01</span><span class="mx-2 text-[#191919]/30">/</span>Conversational
+            </span>
+            <svg class="w-4 h-4 text-gray-400 group-hover:text-gray-700 group-hover:translate-x-0.5 transition-all duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+
+          <div class="group bg-[#F4F3F3] hover:bg-[#eaeaea] transition-all duration-200 cursor-pointer px-4 sm:px-6 py-3.5 sm:py-4 flex items-center justify-between">
+            <span class="font-medium text-[#191919]">
+              <span class="text-[#191919]/40">02</span><span class="mx-2 text-[#191919]/30">/</span>Connected
+            </span>
+            <svg class="w-4 h-4 text-gray-400 group-hover:text-gray-700 group-hover:translate-x-0.5 transition-all duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+
+          <div class="group bg-[#F4F3F3] hover:bg-[#eaeaea] transition-all duration-200 cursor-pointer px-4 sm:px-6 py-3.5 sm:py-4 flex items-center justify-between">
+            <span class="font-medium text-[#191919]">
+              <span class="text-[#191919]/40">03</span><span class="mx-2 text-[#191919]/30">/</span>Compliant
+            </span>
+            <svg class="w-4 h-4 text-gray-400 group-hover:text-gray-700 group-hover:translate-x-0.5 transition-all duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function () {
+  var video = document.getElementById('bg-video');
+  var canvas = document.getElementById('bg-canvas');
+  var ctx = canvas.getContext('2d');
+
+  var frames = [];
+  var lastCaptureTime = -1;
+  var capturing = true;
+  var rafId = null;
+
+  function captureFrame() {
+    if (!capturing) return;
+    if (video.currentTime === lastCaptureTime) return;
+    lastCaptureTime = video.currentTime;
+
+    var vw = video.videoWidth || 960;
+    var vh = video.videoHeight || 540;
+    var capW = 960;
+    var capH = Math.round(capW * (vh / vw));
+
+    var off = document.createElement('canvas');
+    off.width = capW;
+    off.height = capH;
+    var offCtx = off.getContext('2d');
+    try {
+      offCtx.drawImage(video, 0, 0, capW, capH);
+      frames.push(off);
+    } catch (e) {
+      capturing = false;
+    }
+  }
+
+  function rvfcLoop() {
+    captureFrame();
+    if (capturing && !video.paused && !video.ended) {
+      video.requestVideoFrameCallback(rvfcLoop);
+    }
+  }
+
+  function rafLoop() {
+    captureFrame();
+    if (capturing && !video.paused && !video.ended) {
+      rafId = requestAnimationFrame(rafLoop);
+    }
+  }
+
+  function startCaptureLoop() {
+    if ('requestVideoFrameCallback' in video) {
+      video.requestVideoFrameCallback(rvfcLoop);
+    } else {
+      rafId = requestAnimationFrame(rafLoop);
+    }
+  }
+
+  function startBoomerangPlayback() {
+    canvas.width = frames[0].width;
+    canvas.height = frames[0].height;
+
+    var index = 0;
+    var direction = 1;
+    var fpsInterval = 1000 / 30;
+    var lastDraw = performance.now();
+
+    function drawLoop(ts) {
+      requestAnimationFrame(drawLoop);
+      var elapsed = ts - lastDraw;
+      if (elapsed < fpsInterval) return;
+      lastDraw = ts - (elapsed % fpsInterval);
+
+      var frame = frames[index];
+      if (frame) ctx.drawImage(frame, 0, 0);
+
+      index += direction;
+      if (index >= frames.length - 1) {
+        index = frames.length - 1;
+        direction = -1;
+      } else if (index <= 0) {
+        index = 0;
+        direction = 1;
+      }
+    }
+
+    requestAnimationFrame(drawLoop);
+  }
+
+  video.addEventListener('loadedmetadata', function () {
+    video.play().catch(function () {});
+  });
+
+  video.addEventListener('play', startCaptureLoop);
+
+  video.addEventListener('ended', function () {
+    capturing = false;
+    if (rafId) cancelAnimationFrame(rafId);
+    if (frames.length > 1) {
+      video.style.display = 'none';
+      canvas.style.display = 'block';
+      startBoomerangPlayback();
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
